@@ -1,0 +1,60 @@
+header{
+    background-color: #008029;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 0 4px 6px #00000052;
+}
+
+nav{
+    background-color: #8ea618;
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;  /*Quitar Viñetas*/
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover, nav li button:hover{
+    color: yellow;
+}
+
+nav li button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    gap: 20px;
+}
+
+.columna-izquierda{
+    flex: 5;
+    background-color: #aac621;
+    color: white;
+    padding: 10px;
+}
+
+.columna-derecha{
+    flex: 5;
+    background-color: #afc736;
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iniciar Sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Estilo externo -->
+    <link rel="stylesheet" type="text/css" href="../Estilo/style2.css">
+    <!-- Script externo -->
+    <script src="../Script/loginScript.js" defer></script>
+</head>
+<body>
+    <div class="login-contenedor">
+        <form onsubmit="iniciosesion(); return false;">
+            <h2>Iniciar Sesión</h2>
+
+            <div class="contenedor">
+                <img src="../Asssets/uvg_logros.png" alt="Logo UVG">
+            </div>
+
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Entrar</button>
+
+            <div class="contenedor">
+                <a href="registro.html">Crea una Cuenta</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilo/style1.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="inicioSesion.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <h2>Mi Sitio Web</h2>
+        <nav>
+            <ul>
+                <li><button onclick="saludar()">Mensaje</button></li>
+                <li><button onclick="irACalculadora()">Calculadora</button></li>
+                <li><a href="#">Mas</a></li>
+            </ul>
+        </nav>
+        <script>
+            function saludar(){
+                alert("Wazaaaaaa 👻 !!")
+            }
+            function irACalculadora(){
+                window.location.href = "calculadora.html"
+            }
+        </script>
+    </header>
+
+    <main>
+        <div class = "login-contener">
+            <form>
+                <h2>Operacion de 2 numeros</h2>
+                <h3 id="lblOperacion">Sumar</h3>
+                <label for="resuelve">Resuelve:</label>
+                <input type="number" id="num1" name="num1" required/>
+                <select id="signo">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" name="num2" required/>
+                <button type="submit" onclick="operar()">Operar</button>
+            </form>
+        </div>
+    </main>
+    <script src="../Script/script1.js"></script>
+    
+</body>
+</html>

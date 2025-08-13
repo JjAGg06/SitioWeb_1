@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encuesta Wazaa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='../Estilo/style5.css'>
+    <script src='../Script/script3.js' defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="inicioSesion.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <h2>Mi Sitio Web</h2>
+        <nav>
+            <ul>
+                <li><button onclick="saludar()">Mensaje</button></li>
+                <li><button onclick="irACalculadora()">Calculadora</button></li>
+                <li><button onclick="irAFormulario()">Formulario</button></li>
+                <li><button onclick="irAEncusta()">Encuesta</button></li>
+                <li><a href="#">Mas</a></li>
+            </ul>
+        </nav>
+        <script>
+            function saludar() {
+                alert("Wazaaaaaa 👻 !!")
+            }
+            function irACalculadora() {
+                window.location.href = "calculadora.html"
+            }
+            function irAFormulario() {
+                window.location.href = "formulario.html"
+            }
+            function irAEncusta() {
+                window.location.href = "encuesta.html"
+            }
+        </script>
+    </header>
+
+    <main style="padding: 30px;">
+        <h3>Encuesta: ¿Debe construirse una pasarela peatonal frente a la Universidad del Valle de Guatemala?</h3>
+
+        <form id="formEncuesta">
+            <p>1. ¿Consideras necesaria una pasarela frente a la universidad?</p>
+            <label><input type="radio" name="preg1" value="sí"> Simon</label>
+            <label><input type="radio" name="preg1" value="no"> No</label>
+
+            <p>2. ¿Con qué frecuencia cruzas la calle en ese sector?</p>
+            <select name="preg2">
+                <option value="diario">Todos los días</option>
+                <option value="frecuente">Varias veces a la semana</option>
+                <option value="ocasional">Algunas veces</option>
+                <option value="nunca">Jamas</option>
+            </select>
+
+            <p>3. ¿Te has sentido en peligro al cruzar?</p>
+            <label><input type="radio" name="preg3" value="sí"> Sí</label>
+            <label><input type="radio" name="preg3" value="no"> No</label>
+
+            <p>4. ¿Qué medio usas para llegar a la universidad?</p>
+            <label><input type="checkbox" name="preg4" value="bus"> Bus</label>
+            <label><input type="checkbox" name="preg4" value="carro"> Carro</label>
+            <label><input type="checkbox" name="preg4" value="moto"> Moto</label>
+            <label><input type="checkbox" name="preg4" value="bici"> Bicicleta</label>
+            <label><input type="checkbox" name="preg4" value="pie"> A pie</label>
+
+            <p>5. ¿Consideras que una pasarela mejoraría la seguridad vial?</p>
+            <label><input type="radio" name="preg5" value="sí"> Sí</label>
+            <label><input type="radio" name="preg5" value="no"> No</label>
+
+            <p>6. ¿A qué hora sueles cruzar la calle?</p>
+            <input type="time" name="preg6">
+
+            <p>7. ¿Qué día usualmente asistes a la universidad?</p>
+            <input type="date" name="preg7">
+
+            <p>8. ¿Quién debería financiar la pasarela?</p>
+            <label><input type="radio" name="preg8" value="estado"> La Municipalidad</label>
+            <label><input type="radio" name="preg8" value="universidad"> Universidad</label>
+            <label><input type="radio" name="preg8" value="privado"> Alguna empresa privada</label>
+
+            <p>9. ¿Estarías dispuesto a apoyar económicamente una construcción?</p>
+            <label><input type="radio" name="preg9" value="sí"> Simon</label>
+            <label><input type="radio" name="preg9" value="no"> Nelpas</label>
+
+            <p>10. ¿Deseas compartir alguna recomendación?</p>
+            <textarea name="preg10" rows="3" cols="30" placeholder="Escribe aquí..."></textarea>
+
+            <br><br>
+            <button type="button" onclick="enviarEncuesta()">Responder Encuesta</button>
+        </form>
+
+        <section id="resultados" style="margin-top: 40px;">
+            <h4>Resultados de la Encuesta</h4>
+            <p><strong>Encuestas enviadas:</strong> <span id="contador">0</span></p>
+            <ul id="respuestas"></ul>
+        </section>
+    </main>
+</body>
+</html>

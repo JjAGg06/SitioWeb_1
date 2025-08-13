@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Estilo/style1.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="inicioSesion.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <h2>Mi Sitio Web</h2>
+        <nav>
+            <ul>
+                <li><button onclick="saludar()">Mensaje</button></li>
+                <li><button onclick="irACalculadora()">Calculadora</button></li>
+                <li><button onclick="irAFormulario()">Formulario</button></li>
+                <li><button onclick="irAEncusta()">Encuesta</button></li>
+                <li><a href="#">Mas</a></li>
+            </ul>
+        </nav>
+        <script>
+            function saludar(){
+                alert("Wazaaaaaa 👻 !!")
+            }
+            function irACalculadora(){
+                window.location.href = "calculadora.html"
+            }
+            function irAFormulario(){
+                window.location.href = "formulario.html"
+            }
+            function irAEncusta(){
+                window.location.href = "encuesta.html"
+            }
+        </script>
+    </header>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nesciunt odit magnam, dolorem non aspernatur
+        delectus dolores cum quo, illum ex quae impedit assumenda id inventore similique? Exercitationem dolorum aliquid
+        ratione pariatur et tenetur quaerat magnam. Repellat ex dicta quas.
+    </p>
+    <div class="contenedor">
+        <div class="columna-izquierda">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non natus odit recusandae quo? Odio
+                delectus placeat laborum laudantium sit animi natus adipisci fugit, facilis magni. Distinctio, rerum at
+                eaque illo libero tempora! Iusto sequi nostrum beatae? Commodi, harum dolores.
+            </p>
+        </div>
+        <div class="columna-derecha">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa beatae dolore nulla, reiciendis laborum
+                deserunt autem vitae iste optio. Placeat aut autem commodi iste magnam adipisci voluptates culpa,
+                ratione sed fugit sint quas totam cupiditate eaque repudiandae, molestiae cum illum.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
