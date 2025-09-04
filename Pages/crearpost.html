@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crear Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../Estilo/style5.css">
+    <script src="../Script/crearpost.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="inicioSesion.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <h2>Crear Post</h2>
+        <nav>
+            <ul>
+                <li><button onclick="saludar()">Mensaje</button></li>
+                <li><button onclick="irACalculadora()">Calculadora</button></li>
+                <li><button onclick="irAFormulario()">Formulario</button></li>
+                <li><button onclick="irAEncusta()">Encuesta</button></li>
+                <li><button onclick="irAPost()">Post</button></li>
+                <li><a href="#">Mas</a></li>
+            </ul>
+        </nav>
+        <script>
+            function saludar() {
+                alert("Wazaaaaaa 👻 !!")
+            }
+            function irACalculadora() {
+                window.location.href = "calculadora.html"
+            }
+            function irAFormulario() {
+                window.location.href = "formulario.html"
+            }
+            function irAEncusta() {
+                window.location.href = "encuesta.html"
+            }
+            function irAPost() {
+                window.location.href = "post.html"
+            }
+        </script>
+    </header>
+
+    <div>
+        <div class="columna-izquierda">
+            <form id="formPost" onsubmit="crearPost(); return false;">
+                <div>
+                    <label for="titulo">Título</label>
+                </div>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <div>
+                    <label for="descripcion">Descripción</label>
+                </div>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <div>
+                    <label for="imagen">Imagen</label>
+                </div>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+                <div>
+                    <button type="submit">Publicar Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
